@@ -97,10 +97,9 @@ if(require.main == module) {
            console.log(outJson);
 
 
-       rest.get(program.url).on('complete',function(result) {
-        
-        }); 
-    }
+       rest.get(program.url).on('complete',function(result))
+        }
+   }
 
 
 
