@@ -94,8 +94,13 @@ if(require.main == module) {
     program
         .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
         .option('-f, --file <html_file>', 'Path to index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
-//        .option('-f, --url [url]', 'Path to optional URL', assertURLExists, URL_DEFAULT)
+        .option('-u, --url <http://>', 'Path to optional URL')
         .parse(process.argv);
+
+
+
+
+
     var checkJson = checkHtmlFile(program.file, program.checks);
     var outJson = JSON.stringify(checkJson, null, 4);
     console.log(outJson);
