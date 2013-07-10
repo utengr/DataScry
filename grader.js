@@ -71,6 +71,18 @@ var checkHtmlFile = function(htmlfile, checksfile) {
 };
 
 
+var checkHtml = function(html, checksfile) {
+    $ = cheerio.load(html);
+    var chcks = loadChecks(checksfile).sort();
+    var out = {};
+    for(var ii in checks) {
+       var present = $(checks[ii]).length > 0; 
+       out[checks[ii]] = present;
+    }
+    return out;
+};
+
+
 var clone = function(fn) {
     // Workaround for commander.js issue.
     // http://stackoverflow.com/a/6772648
