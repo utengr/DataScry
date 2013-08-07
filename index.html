@@ -261,23 +261,23 @@
        </div>
      </div>
 
-     <!-- For the FAQ, we introduce a little bit of JS, using the accordian. -->
+     <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
      <div class="row-fluid faq">
          <div class="span10 offset1">
            <h3>FAQ</h3>
-           <div class="accordion" id="accordion2"> 
+           <div class="accordion" id="accordion2">
              <div class="accordion-group">
                <div class="accordion-heading">
                  <a class="accordion-toggle" data-toggle="collapse"
                     data-parent="#accordian2" href="#collapseOne">
-                   What does FAQ stand for?
+                   What is DataScry?
                  </a>
                </div>
                <div id="collapseOne" class="accordion-body collapse">
-                 <div class="accodion-inner">
-                   Frequenty Asked Question.
+                 <div class="accordion-inner">
+                   DataScry is a tool that allows you to easily explore your data through charts and analysis.
                  </div>
                </div>
              </div>
@@ -285,19 +285,57 @@
                <div class="accordion-heading">
                  <a class="accordion-toggle" data-toggle="collapse"
                     data-parent="#accordion2" href="#collapseTwo">
-                   What's a Frequently Asked Question?
+                   Why should I use DataScry instead of say MS Excel(tm)?
                  </a>
                </div>
                <div id="collapseTwo" class="accordion-body collapse">
                  <div class="accordion-inner">
-                   A question which is commanly asked by users.
+                   MS Excel(tm) requires several menus and formatting to graph data and switching between data columns is cumbersome.  DataScry will allows you to switch with just a selection.
                  </div>
                </div>
              </div>
+			 <div class="accordion-group">
+               <div class="accordion-heading">
+                 <a class="accordion-toggle" data-toggle="collapse"
+                    data-parent="#accordion2" href="#collapseTwo">
+                   What about other plotting tools on the web?
+                 </a>
+               </div>
+               <div id="collapseTwo" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                   There are numerous options other than MS Excel(tm), but they tend to pigeon hole you into pie, bar, or column charts. DataScry will allow you to plot whatever you want however you want.
+                 </div>
+               </div>
+             </div>
+			 <div class="accordion-group">
+               <div class="accordion-heading">
+                 <a class="accordion-toggle" data-toggle="collapse"
+                    data-parent="#accordion2" href="#collapseTwo">
+                   Why advanced analysis can I do with DataScry?
+                 </a>
+               </div>
+               <div id="collapseTwo" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                   Initially DataScry will implement a Decision Tree and an Anomaly Detection feature.  The Decision Tree module will allow you to build a 'tree' to help classify your outcomes for future predictions.  The Anomaly Detector will allow you to pull out samples that are out of the 'norm' for your dataset. 
+                 </div>
+               </div>
+             </div>
+			 <div class="accordion-group">
+               <div class="accordion-heading">
+                 <a class="accordion-toggle" data-toggle="collapse"
+                    data-parent="#accordian2" href="#collapseOne">
+                   What does DataScry not do?
+                 </a>
+               </div>
+               <div id="collapseOne" class="accordion-body collapse">
+                 <div class="accordion-inner">
+                   DataScry will not clean up or 'munge' your data.  MS Excel(tm) does an excellent job of this, so DataScry will focus our limited resources on other features.
+                 </div>
+               </div>
+             </div>			 
            </div>
          </div>
-
-     </div
+     </div>
 
      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
      <!-- http://creativecommons.org/license/ -->
